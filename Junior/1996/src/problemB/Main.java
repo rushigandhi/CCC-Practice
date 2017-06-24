@@ -1,5 +1,6 @@
 package problemB;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -10,30 +11,43 @@ public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 		
 		int total = in.nextInt();
+		long newNum = 0;
+		ArrayList<Long> list = new ArrayList<Long>();
 
 		for (int x = 0; x < total; x++){
-			int num = in.nextInt();
- 
-			System.out.println(num);
+			long num = in.nextLong();
+			list.add(num);
 			
-			String line = Integer.toString(num);
+		}
+		
+		for (int i = 0; i < list.size(); i++){
+ 
+			System.out.println(list.get(i));
+			
+			String line = Long.toString(list.get(i));
 			
 			int length = line.length();
 			
-			for (int i = 0;  i < length; i++){
-							
-				int sub = Integer.parseInt(line.charAt(line.length()-1) + "");
-				
+			while (length!=2){
+				length--;
+				String sub = line.substring(line.length()-1);
 				line = line.substring(0, line.length()-1);
-				
-				int diff = Integer.parseInt(line) - sub;
-				
-				line = Integer.toString(diff);
-				
+				String newLine = line.substring(0);
+				newNum = Long.parseLong(newLine) - Long.parseLong(sub);
+				line = Long.toString(newNum);
 				System.out.println(line);
 				
-			}	
+				
+			}
 			
+			if(newNum%11==0){
+				System.out.println("The number " + list.get(i) + " is divisible be 11");
+			}
+			
+			
+			System.out.println();
+			
+
 		}
 
 }
