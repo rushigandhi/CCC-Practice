@@ -18,6 +18,7 @@ public static void main(String[] args){
 			
 			in.nextLine();
 			String equation = in.nextLine();
+			input.add(equation);
 			
 			String numOne = equation.substring(0, equation.indexOf("+"));
 			String numTwo = equation.substring(equation.indexOf("+") + 1, equation.indexOf("="));
@@ -30,14 +31,23 @@ public static void main(String[] args){
 				}
 				
 			}
+			
 			for(int i = 0; i < numTwo.length(); i++){
 				
 				if(numTwo.charAt(i)==(symbols[i].charAt(0))){
 					second = second + symbols[i].charAt(1);
 				}
 				
+				output.add(first + " " + second);
+				
 			}
 			
+			
+		}
+		
+		for (int j = 0; j < input.size(); j++){
+			
+			System.out.println(input.get(j) + output.get(j));
 			
 		}
 }
