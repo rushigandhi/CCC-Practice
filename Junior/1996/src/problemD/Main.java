@@ -26,24 +26,30 @@ public static void main(String[] args){
 			int second = 0;
 			for(int i = 0; i < numOne.length(); i++){
 				
-				if(numOne.charAt(i)==(symbols[i].charAt(0))){
-					first = first + symbols[i].charAt(1);
+				for (int a = 0; a < symbols.length; a++){
+				
+				if(numOne.charAt(i)==(symbols[a].charAt(0))){
+					first = first + symbols[a].charAt(1);
+				}
 				}
 				
 			}
 			
-			for(int i = 0; i < numTwo.length(); i++){
+			for(int c = 0; c < numTwo.length(); c++){
 				
-				if(numTwo.charAt(i)==(symbols[i].charAt(0))){
-					second = second + symbols[i].charAt(1);
-				}
-				
+				for (int b = 0; b < symbols.length; b++){
+					
+					if(numOne.charAt(c)==(symbols[b].charAt(0))){
+						first = first + symbols[b].charAt(1);
+					}
+					}
+			}
 				output.add(first + " " + second);
 				
 			}
 			
 			
-		}
+		
 		
 		for (int j = 0; j < input.size(); j++){
 			
