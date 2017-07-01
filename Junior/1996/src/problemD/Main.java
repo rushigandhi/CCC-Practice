@@ -12,7 +12,8 @@ public static void main(String[] args){
 		ArrayList<String> input = new ArrayList<String>();
 		ArrayList<String> output = new ArrayList<String>();
 		
-		String[] symbols = { "I1", "V5", "X10", "L50", "C100", "D500", "M1000"};
+		char[] symbols = { 'I', 'V', 'X', 'L', 'C', 'D', 'M'};
+		int[] nums = { 1, 5, 10, 50, 100, 500, 1000};
 		
 		for(int x = 0; x < total; x++){
 			
@@ -26,24 +27,25 @@ public static void main(String[] args){
 			int second = 0;
 			for(int i = 0; i < numOne.length(); i++){
 				
-				for (int a = 0; a < symbols.length; a++){
+				for (int a = 0; a < 7; a++){
 				
-				if(numOne.charAt(i)==(symbols[a].charAt(0))){
-					first = first + symbols[a].charAt(1);
+				if(numOne.charAt(i)==symbols[a]){
+					first = first + nums[a];
+				}
+				}
+				
+			}
+				for(int k = 0; k < numTwo.length(); k++){
+				
+				for (int b = 0; b < 7; b++){
+				
+				if(numTwo.charAt(k)==symbols[b]){
+					second = second + nums[b];
 				}
 				}
 				
 			}
 			
-			for(int c = 0; c < numTwo.length(); c++){
-				
-				for (int b = 0; b < symbols.length; b++){
-					
-					if(numOne.charAt(c)==(symbols[b].charAt(0))){
-						first = first + symbols[b].charAt(1);
-					}
-					}
-			}
 				output.add(first + " " + second);
 				
 			}
