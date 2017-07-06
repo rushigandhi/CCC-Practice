@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HiddenPalindrome
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             string str = Console.ReadLine();
+            Console.WriteLine( check(str) );
+            
+        }
+
+
+        public static int check(string str)
+        {
+            int bestLen = 1;
+            string str1 = str;
+            for (int x = 0; x < str.Length; x++)
+            {
+                string str2 = str1;
+
+                for (int i = 0; i < str1.Length; i++)
+                {
+                    if (checkPalindrome(str2) && str2.Length > bestLen) bestLen = str2.Length;
+                    //Console.WriteLine(str1+" "+str2 + " " + bestLen);
+                    str2 = str2.Substring(0, str2.Length-1);
+                    
+
+                }
+                str1 = str1.Substring(1);
+            }
+            return bestLen;
+        }
+
+
+
+        public static bool checkPalindrome (string str)
+        {
+            for (int i=0; i<str.Length;i++)
+            {
+                if (str[i] != str[str.Length - i - 1]) return false;
+            }
+            return true;
+        }
+    }
+}
