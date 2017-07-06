@@ -26,15 +26,43 @@ public static void main(String[] args){
 			int first = 0;
 			int second = 0;
 			for(int i = 0; i < numOne.length(); i++){
-				
-				for (int a = 0; a < 7; a++){
-				
-				if(numOne.charAt(i)==symbols[a]){
-					first = first + nums[a];
+
+				if(numOne.charAt(i)=='I' && numOne.charAt(i+1)=='V'){
+						first = first + 4;
+						i++;
+					}
+					else if(numOne.charAt(i)=='I' && numOne.charAt(i+1)=='X'){
+						first = first + 9;
+						i++;
+					}
+					else if(numOne.charAt(i)=='X' && numOne.charAt(i+1)=='L'){
+						first = first + 40;
+						i++;
+					}
+					else if(numOne.charAt(i)=='X' && numOne.charAt(i+1)=='C'){
+						first = first + 90;
+						i++;
+					}
+					else if(numOne.charAt(i)=='C' && numOne.charAt(i+1)=='D'){
+						first = first + 400;
+						i++;
+					}
+					else if(numOne.charAt(i)=='C' && numOne.charAt(i+1)=='D'){
+						first = first + 900;
+						i++;
+					}
+					else{
+					for (int a = 0; a < 7; a++){
+					if(numOne.charAt(i)==symbols[a]){
+						first = first + nums[a];
+					}
+					}
 				}
-				}
-				
+					System.out.println(first);
 			}
+
+				
+			
 				for(int k = 0; k < numTwo.length(); k++){
 				
 				for (int b = 0; b < 7; b++){
@@ -44,9 +72,11 @@ public static void main(String[] args){
 				}
 				}
 				
+				
+				
 			}
-			
-				output.add(first + " " + second);
+				int sum = first + second;
+				output.add(Integer.toString(sum));
 				
 			}
 			
