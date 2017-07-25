@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class J22005 {
+	
+public static void main(String[] args){
+		
+		Scanner in = new Scanner(System.in);
+		
+		 int start  = in.nextInt();
+		 int end = in.nextInt();
+		 
+		 int counter = 0; 
+		
+		 
+		 for(int x = start; x <= end; x++){
+			 
+			 int c = 0;
+				
+				for(int i = 1; i <= x; i++){
+					
+					if (x%i == 0)
+						c++;
+					
+					
+				}
+				
+				if (c == 4)
+					counter++;			 
+		 }
+		 
+		 System.out.println("The number of RSA numbers between " + start + " and " + end + " is " + counter);
+		 
+	}		
