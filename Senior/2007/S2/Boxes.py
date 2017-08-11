@@ -8,7 +8,7 @@ boxVol = sorted(boxVol)
 totalItems = int(input())
 for x in range(totalItems):
     dimensions = [int(e) for e in input().split()]
-    checker = True
+    boxDimen = sorted(boxVol[len(boxVol) - 1])
     for i in range(len(boxVol)):
         boxDimen = sorted(boxVol[i])
         dimensions = sorted(dimensions)
@@ -16,10 +16,10 @@ for x in range(totalItems):
             print(boxDimen[0]*boxDimen[1]*boxDimen[2])
             checker = False
             break
-        else:
-            continue
-    if checker:
+    if (dimensions[0] > boxDimen[0]) or (dimensions[1] > boxDimen[1]) or (dimensions[2] > boxDimen[2]):
         print("Item does not fit.")
+
+
 
 
 
