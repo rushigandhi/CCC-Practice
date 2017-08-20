@@ -12,7 +12,9 @@ for x in range(numOfSorts):
             tempData = grid[i + 1]
             grid[i + 1] = grid[i]
             grid[i] = tempData
-
-for y in range(len(grid)):
-    line = ' '.join(str(e) for e in grid[y])
+    line = ' '.join(str(e) for e in grid[i])
     print(line)
+
+'''for y in range(len(grid)):
+    line = ' '.join(str(e) for e in grid[y])
+    print(line)'''
