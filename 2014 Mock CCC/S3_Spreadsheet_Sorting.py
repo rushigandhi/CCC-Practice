@@ -1,5 +1,5 @@
 dimen = [int(e) for e in input().split()]
-#print(dimen)
+
 grid = list()
 for x in range(dimen[0]):
     grid.append([int(e) for e in input().split()])
@@ -13,8 +13,6 @@ for x in range(numOfSorts):
                 tempData = grid[i + 1]
                 grid[i + 1] = grid[i]
                 grid[i] = tempData
-        # line = ' '.join(str(e) for e in grid[i])
-
 
 for y in range(len(grid)):
     line = ' '.join(str(e) for e in grid[y])
