@@ -62,4 +62,6 @@ combinations = list()
 for i in range(4):
     combinations.append([pink[4-1-i], green[4-1-i], red[4-1-i], orange[4-1-i]])
 
+
+combinations = set(combinations)
 print(combinations)
