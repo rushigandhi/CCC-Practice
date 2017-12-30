@@ -19,7 +19,6 @@ for i in range(rounds):
     for r in range(participants):
         order.append(r + 1)
 
-    print(order)
 
     # add the participants score
     for a in range(len(results)):
@@ -36,26 +35,26 @@ for i in range(rounds):
                 results[y + 1] = tempResults
                 order[y + 1] = tempOrder
 
-    reversed(order)
-    print(results)
-    print(order)
-
+    # adding the lowest position of a contestant to a list
     for p in range(len(order)):
-        lowest[order[p] - 1] = max(lowest[order[p] - 1], order[p])
-    print(lowest)
+        lowest[order[p] - 1] = max(lowest[order[p] - 1], p + 1)
+
+# initializing the highest score variable
+top_score = 0
+
+# finding the highest score variable
+for u in range(len(score)):
+    top_score = max(top_score, score[u])
+
+# printing the winning contestant(s), score(s), and worst rank(s)
+for q in range(len(score)):
+    if score[q] == top_score:
+        print("Yodeller " + str(q + 1) + " is the TopYodeller: score " + str(score[q]) + ", worst rank " + str(lowest[q]))
 
 
-print(score, lowest)
-
-
-
-
-
-
-
+# Sample Input
 '''
 5 2
 99 97 100 85 -4
 95 97 100 62 1000
-
 '''
