@@ -1,4 +1,3 @@
-
 # gather all the competition information
 competition = [int(x) for x in input().split()]
 participants = competition[0]
@@ -35,9 +34,14 @@ for i in range(rounds):
                 results[y + 1] = tempResults
                 order[y + 1] = tempOrder
 
+    order.reverse()
+    print(results, order)
+
     # adding the lowest position of a contestant to a list
     for p in range(len(order)):
         lowest[order[p] - 1] = max(lowest[order[p] - 1], p + 1)
+    print("lowest", lowest, "score", score)
+
 
 # initializing the highest score variable
 top_score = 0
@@ -51,7 +55,7 @@ for q in range(len(score)):
     if score[q] == top_score:
         print("Yodeller " + str(q + 1) + " is the TopYodeller: score " + str(score[q]) + ", worst rank " + str(lowest[q]))
 
-
+print(score, lowest)
 # Sample Input
 '''
 5 2
