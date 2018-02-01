@@ -21,14 +21,16 @@ for i in range(total):
         else:
             y_coord.append(coordinates[x])
 
-    print(x_coord, y_coord)
     total_edges = coordinates[0]
 
-    # for x in range(1, total_edges):
-    #
-    #     if x == total_edges - 1:
-    #         edge_slope = (coordinates[3]-coordinates[x+1])/(coordinates[x+2]-coordinates[x])
-    #         edge_constant = coordinates[x+1] - edge_slope*coordinates[x]
-    #     else:
-    #         edge_slope = (coordinates[x+3]-coordinates[x+1])/(coordinates[x+2]-coordinates[x])
-    #         edge_constant = coordinates[x+1] - edge_slope*coordinates[x]
+    print(x_coord, y_coord)
+    for x in range(total_edges):
+        if x == total_edges - 1:
+            if x_coord[0]-x_coord[x] == 0:
+
+
+            edge_slope = (y_coord[0]-y_coord[x])/()
+        else:
+            edge_slope = (y_coord[x+1]-y_coord[x])/(x_coord[x+1]-x_coord[x])
+        edge_constant = y_coord[x] - edge_slope*x_coord[x]
+        print(edge_slope, edge_constant)
