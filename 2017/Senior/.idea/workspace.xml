@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c6615f4-0cd0-41a9-a2b2-2d41e3a7ee5b" name="Default" comment="" />
+    <list default="true" id="f65b9139-d92f-4f3e-af47-790c6703c39f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="S3_Gates.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/S3_Gates.py">
+      <file leaf-file-name="S3_Nailed_It!.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/S3_Nailed_It!.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -39,7 +39,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/S3_Gates.py" />
+        <option value="$PROJECT_DIR$/S3_Nailed_It.py" />
+        <option value="$PROJECT_DIR$/S3_Nailed_It!.py" />
       </list>
     </option>
   </component>
@@ -74,10 +75,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,6 +88,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,8 +110,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.S3_Gates">
-    <configuration name="S3_Gates" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.S3_Nailed_It!">
+    <configuration name="S3_Nailed_It!" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -122,7 +123,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Senior" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/S3_Gates.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/S3_Nailed_It!.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,23 +210,20 @@
     </configuration>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.S3_Gates" />
+        <item index="0" class="java.lang.String" itemvalue="Python.S3_Nailed_It!" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c6615f4-0cd0-41a9-a2b2-2d41e3a7ee5b" name="Default" comment="" />
-      <created>1518491796903</created>
+      <changelist id="f65b9139-d92f-4f3e-af47-790c6703c39f" name="Default" comment="" />
+      <created>1518501683741</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1518491796903</updated>
+      <updated>1518501683741</updated>
     </task>
     <servers />
   </component>
@@ -269,10 +267,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/S3_Gates.py">
+    <entry file="file://$PROJECT_DIR$/S3_Nailed_It!.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
